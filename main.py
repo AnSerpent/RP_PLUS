@@ -10,7 +10,7 @@ ctk.set_default_color_theme("dark-blue")
 
 # Файл, куда будем сохранять историю
 HISTORY_FILE = "history.json"
-APP_VERSION = "Prototype v1 · 29.09.2026"
+APP_VERSION = "v1.0.1 · 29.09.2026"
 
 class App(ctk.CTk):
     def __init__(self):
