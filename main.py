@@ -1,8 +1,15 @@
 import customtkinter as ctk
 from PIL import Image
 import json
-import os
+import sys, os  
 from datetime import datetime
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 # --- Настройки темы ---
 ctk.set_appearance_mode("Dark")
@@ -33,7 +40,7 @@ class App(ctk.CTk):
 
                  # Иконка (загружаем из файла)
         try:
-            img = Image.open("icon.png")
+            img = Image.open(resource_path("icon.png"))
             orig_w, orig_h = img.size
 
             # Хотим высоту 100px, ширину считаем по пропорции
