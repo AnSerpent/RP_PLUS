@@ -17,7 +17,7 @@ ctk.set_default_color_theme("dark-blue")
 
 # Файл, куда будем сохранять историю
 HISTORY_FILE = "history.json"
-APP_VERSION = "v1.0.1 · 29.09.2026"
+APP_VERSION = "v1.0.2 · 01.10.2026"
 
 class App(ctk.CTk):
     def __init__(self):
@@ -28,6 +28,11 @@ class App(ctk.CTk):
         self.geometry("1000x650")
         self.minsize(800, 500)
         self.configure(fg_color="#1e1e1e")
+        # 👇 Иконка окна и панели задач
+        try:
+            self.iconbitmap(resource_path("icon_wbg.ico"))
+        except Exception as e:
+            print(f"Не удалось загрузить иконку окна: {e}")
 
         # Главная сетка на 2 колонки
         self.grid_columnconfigure(0, weight=1, minsize=400)
