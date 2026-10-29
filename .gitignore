@@ -1,4 +1,4 @@
-# Virtual environment
+# Виртуальное окружение
 venv/
 .venv/
 
@@ -14,5 +14,15 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Data file
+# Данные приложения (личные, не для репозитория)
 history.json
+settings.json
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Тестовые файлы
+test.json
+test_settings.json
