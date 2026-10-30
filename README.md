@@ -58,9 +58,7 @@
 ## 💙 Поддержать проект
 
     Если тебе нравится RP+, ты можешь поддержать разработку:
-
-    https://img.shields.io/badge/Boosty-%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-ff6b00?style=for-the-badge&logo=buy-me-a-coffee
-
+    https://boosty.to/iserpent
     Любая поддержка — мотивация делать приложение лучше!
 
 ## 📄 Лицензия
